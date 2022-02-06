@@ -27,7 +27,7 @@ import (
 
 // Genesis hashes to enforce below configs on.
 var (
-	MainnetGenesisHash = common.HexToHash("0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3")
+	MainnetGenesisHash = common.HexToHash("0xe3ec5f38b21eeacefe19f3ec6850d6ee06c88591f3231ac6d292889eb98bf7fb")
 	RopstenGenesisHash = common.HexToHash("0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d")
 	SepoliaGenesisHash = common.HexToHash("0x25a5cc106eea7138acab33231d7160d69cb777ee0c2c553fcddf5138993e6dd9")
 	RinkebyGenesisHash = common.HexToHash("0x6341fd3daf94b748c72ced5a5b26028f2474f5f00d824504e4fa37a75767e177")
@@ -76,10 +76,10 @@ var (
 
 	// MainnetTrustedCheckpoint contains the light client trusted checkpoint for the main network.
 	MainnetTrustedCheckpoint = &TrustedCheckpoint{
-		SectionIndex: 413,
-		SectionHead:  common.HexToHash("0x8aa8e64ceadcdc5f23bc41d2acb7295a261a5cf680bb00a34f0e01af08200083"),
-		CHTRoot:      common.HexToHash("0x008af584d385a2610706c5a439d39f15ddd4b691c5d42603f65ae576f703f477"),
-		BloomRoot:    common.HexToHash("0x5a081af71a588f4d90bced242545b08904ad4fb92f7effff2ceb6e50e6dec157"),
+		SectionIndex: 1,
+		SectionHead:  common.HexToHash("0xe3ec5f38b21eeacefe19f3ec6850d6ee06c88591f3231ac6d292889eb98bf7fb"),
+		CHTRoot:      common.HexToHash("0xe3ec5f38b21eeacefe19f3ec6850d6ee06c88591f3231ac6d292889eb98bf7fb"),
+		BloomRoot:    common.HexToHash("0xe3ec5f38b21eeacefe19f3ec6850d6ee06c88591f3231ac6d292889eb98bf7fb"),
 	}
 
 	// MainnetCheckpointOracle contains a set of configs for the main network oracle.
