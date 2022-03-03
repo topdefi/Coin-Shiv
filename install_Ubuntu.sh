@@ -15,8 +15,6 @@ rm -rf go1.17.6.linux-amd64.tar.gz
 
 echo ""
 echo "Build Shivay"
-cd Coin-Shiv
-
 make all
 
 cd build/bin/
