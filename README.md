@@ -17,6 +17,32 @@ or, to build the full suite of utilities:
 make all
 ```
 
+### Ubuntu 18.04 + 20.04
+Clone Shivay
+```
+https://github.dev/topdefi/Coin-Shiv
+```
+
+Setup Go path
+```
+sudo nano ~/.profile
+```
+
+Paste the following into the bottom of the file
+```
+export GOPATH=$HOME/work
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+```
+```
+source ~/.profile
+```
+
+Run install script
+```
+cd Coin-Shiv && chmod +x install-Ubuntu.sh && ./install-Ubuntu.sh
+```
+
+
 ## Executables
 
 The go-ethereum project comes with several wrappers/executables found in the `cmd`
