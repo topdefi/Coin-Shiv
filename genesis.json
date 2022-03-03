@@ -24,6 +24,6 @@
     "gasLimit": "0x5F5E100",
     "nonce": "0x0",
     "alloc": {
-      "51944482997eB509aB8fcad001E3E8B437aC9F74": { "balance": "55000000" }
+      "51944482997eB509aB8fcad001E3E8B437aC9F74": { "balance": "55000000000000000000000000" }
     }
   }
