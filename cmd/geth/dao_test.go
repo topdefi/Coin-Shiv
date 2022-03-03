@@ -1,4 +1,4 @@
-0x2c138bd45d7748a4ee6495413451eb288201e11e5b65260508a49e124aeab689// Copyright 2016 The go-ethereum Authors
+// Copyright 2016 The go-ethereum Authors
 // This file is part of go-ethereum.
 //
 // go-ethereum is free software: you can redistribute it and/or modify
