@@ -80,7 +80,7 @@ var defaultNodeConfig = &NodeConfig{
 	BootstrapNodes:        FoundationBootnodes(),
 	MaxPeers:              25,
 	EthereumEnabled:       true,
-	EthereumNetworkID:     559,
+	EthereumNetworkID:     1159,
 	EthereumDatabaseCache: 16,
 }
 
@@ -190,7 +190,7 @@ func NewNode(datadir string, config *NodeConfig) (stack *Node, _ error) {
 		if config.EthereumGenesis == TestShivGenesis() {
 			genesis.Config = params.TestShivChainConfig
 			if config.EthereumNetworkID == 1 {
-				config.EthereumNetworkID = 569
+				config.EthereumNetworkID = 1169
 			}
 		}
 	}
