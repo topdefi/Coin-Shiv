@@ -22,8 +22,8 @@ import "github.com/topdefi/Coin-Shiv/common"
 // the main Ethereum network.
 var MainnetBootnodes = []string{
 	// Shivay Foundation Go Bootnodes
-	"enode://0abea40c4b2f5ad8b564f25c66622a6655b1ff20edcd1abd62fbddd9805c9623a5c01bb5a558f3f96f491e4d080b49a7cd650d7eb568824cfbb63452bc247f2e@66.29.144.165:30303",
-	"enode://dae28d3d0892c8ffd7843afa77acd802e2ec278eb5fa7acabb8124f71aece8f6501045238d1d5560412a85e20888d3e0d764a5762593412185e26b5c5b277979@66.29.144.166:30303",
+	"",
+	"",
 }
 
 // RopstenBootnodes are the enode URLs of the P2P bootstrap nodes running on the
@@ -70,6 +70,14 @@ var GoerliBootnodes = []string{
 	"enode://a59e33ccd2b3e52d578f1fbd70c6f9babda2650f0760d6ff3b37742fdcdfdb3defba5d56d315b40c46b70198c7621e63ffa3f987389c7118634b0fefbbdfa7fd@51.15.119.157:40303",
 }
 
+// TestShivBootnodes are the enode URLs of the P2P bootstrap nodes running on the
+// TestShiv test network.
+var TestShivBootnodes = []string{
+	// Upstream bootnodes
+	"",
+	"",
+}
+
 var V5Bootnodes = []string{
 	// Teku team's bootnode
 	"enr:-KG4QOtcP9X1FbIMOe17QNMKqDxCpm14jcX5tiOE4_TyMrFqbmhPZHK_ZPG2Gxb1GE2xdtodOfx9-cgvNtxnRyHEmC0ghGV0aDKQ9aX9QgAAAAD__________4JpZIJ2NIJpcIQDE8KdiXNlY3AyNTZrMaEDhpehBDbZjM_L9ek699Y7vhUJ-eAdMyQW_Fil522Y0fODdGNwgiMog3VkcIIjKA",
@@ -104,6 +112,8 @@ func KnownDNSNetwork(genesis common.Hash, protocol string) string {
 		net = "rinkeby"
 	case GoerliGenesisHash:
 		net = "goerli"
+	case TestShivGenesisHash:
+		net = "testshiv"
 	default:
 		return ""
 	}

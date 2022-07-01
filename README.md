@@ -20,7 +20,7 @@ make all
 ### Ubuntu 18.04 + 20.04
 Clone Shivay
 ```
-https://github.dev/topdefi/Coin-Shiv
+git clone https://github.com/topdefi/Coin-Shiv
 ```
 
 Setup Go path
@@ -39,7 +39,7 @@ source ~/.profile
 
 Run install script
 ```
-cd Coin-Shiv && chmod +x install-Ubuntu.sh && ./install-Ubuntu.sh
+cd EgonChain && chmod +x install_Ubuntu.sh && ./install_Ubuntu.sh
 ```
 
 

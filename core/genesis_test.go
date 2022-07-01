@@ -172,6 +172,7 @@ func TestGenesisHashes(t *testing.T) {
 		{DefaultRopstenGenesisBlock(), params.RopstenGenesisHash},
 		{DefaultRinkebyGenesisBlock(), params.RinkebyGenesisHash},
 		{DefaultSepoliaGenesisBlock(), params.SepoliaGenesisHash},
+		{DefaultTestShivGenesisBlock(), params.TestShivGenesisHash},
 	} {
 		// Test via MustCommit
 		if have := c.genesis.MustCommit(rawdb.NewMemoryDatabase()).Hash(); have != c.want {

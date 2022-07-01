@@ -80,7 +80,7 @@ var defaultNodeConfig = &NodeConfig{
 	BootstrapNodes:        FoundationBootnodes(),
 	MaxPeers:              25,
 	EthereumEnabled:       true,
-	EthereumNetworkID:     1,
+	EthereumNetworkID:     559,
 	EthereumDatabaseCache: 16,
 }
 
@@ -184,6 +184,13 @@ func NewNode(datadir string, config *NodeConfig) (stack *Node, _ error) {
 			genesis.Config = params.GoerliChainConfig
 			if config.EthereumNetworkID == 1 {
 				config.EthereumNetworkID = 5
+			}
+		}
+		// If we have the TestShiv testnet, hard code the chain configs too
+		if config.EthereumGenesis == TestShivGenesis() {
+			genesis.Config = params.TestShivChainConfig
+			if config.EthereumNetworkID == 1 {
+				config.EthereumNetworkID = 569
 			}
 		}
 	}

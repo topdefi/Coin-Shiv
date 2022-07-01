@@ -253,6 +253,8 @@ func (g *Genesis) configOrDefault(ghash common.Hash) *params.ChainConfig {
 		return params.RinkebyChainConfig
 	case ghash == params.GoerliGenesisHash:
 		return params.GoerliChainConfig
+	case ghash == params.TestShivGenesisHash:
+		return params.TestShivChainConfig
 	default:
 		return params.AllEthashProtocolChanges
 	}
@@ -402,6 +404,18 @@ func DefaultGoerliGenesisBlock() *Genesis {
 		GasLimit:   10485760,
 		Difficulty: big.NewInt(1),
 		Alloc:      decodePrealloc(goerliAllocData),
+	}
+}
+
+// DefaultTestShivGenesisBlock returns the Görli network genesis block.
+func DefaultTestShivGenesisBlock() *Genesis {
+	return &Genesis{
+		Config:     params.TestShivChainConfig,
+		Timestamp:  1656684403,
+		ExtraData:  hexutil.MustDecode("0x000000000000000000000000000000000000000000000000000000000000000051944482997eB509aB8fcad001E3E8B437aC9F740000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"),
+		GasLimit:   100000000,
+		Difficulty: big.NewInt(1),
+		Alloc:      decodePrealloc(testshivAllocData),
 	}
 }
 
