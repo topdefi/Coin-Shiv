@@ -22,8 +22,8 @@ import "github.com/topdefi/Coin-Shiv/common"
 // the main Ethereum network.
 var MainnetBootnodes = []string{
 	// Shivay Foundation Go Bootnodes
-	"",
-	"",
+	"enode://c9a41f21bb9b593ad2c1f8e552b08cd15cd7ecead7be9494435e70bec3f3923393ba794b10d528ccaf3b501bdf129f2f2c4e095e23f7fb65fc8eeef58dcd4dab@66.29.144.165:30303",
+	"enode://43faad77405f9ff411769a659340cc432a041cc384f4b396b39d3987a8b8671f94d43ff81ebd2796607727382e8f452413c641fdcf2a87ae18fda4011977e509@66.29.144.166:30303",
 }
 
 // RopstenBootnodes are the enode URLs of the P2P bootstrap nodes running on the
